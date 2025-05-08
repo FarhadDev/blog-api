@@ -19,7 +19,7 @@ let nextId = 1;
 const blogPostSchema = Joi.object({
     title: Joi.string().min(3).required(),
     content: Joi.string().min(10).required(),
-    author: Joi.required()
+    author: Joi.string().required()
 
 })
 
